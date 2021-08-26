@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=akshitagrawal.dev"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="img-container">
+        <img src="img/jacinto-1.jpg" alt="Image 1" />
+      </div>
+      <h2 id="title">Songity Song</h2>
+      <h3 id="artist">Akshit</h3>
+      <audio src="music/jacinto-1.mp3"></audio>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">00:00</span>
+          <span id="duration">2:36</span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <i class="fas fa-angle-double-left" id="prev" title="Previous"></i>
+        <i class="fas fa-play-circle main-button" id="play" title="Play"></i>
+        <i class="fas fa-angle-double-right" id="next" title="Next"></i>
+      </div>
+    </div>
+
+    <div class="loader" id="loader"></div>
+    <footer>
+      Made with ❤️ by
+      <a href="https://akshitagrawal.dev" id="foot">Akshit Agrawal</a>
+    </footer>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
